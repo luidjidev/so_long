@@ -6,7 +6,7 @@
 /*   By: luisfern <luisfern@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 10:47:56 by luisfern          #+#    #+#             */
-/*   Updated: 2022/11/17 12:52:25 by luisfern         ###   ########.fr       */
+/*   Updated: 2022/11/18 10:19:22 by luisfern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include "../libft/libft.h"
-# include "../printf/ft_printf.h"
+# include "../ft_printf/includes/ft_printf.h"
 # include "../get_next_line/get_next_line.h"
-# include "../minilibx_linux/mlx.h"
+# include "../minilibx-linux/mlx.h"
 
 typedef struct s_program {
 	void	*mlx;
@@ -42,7 +42,6 @@ typedef struct s_program {
 	int		img_width;
 	int		img_height;
 	int		game_over;
-	int		count_to_robot;
 }	t_program;
 
 enum	e_keys{

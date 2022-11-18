@@ -6,7 +6,7 @@
 #    By: luisfern <luisfern@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/17 13:31:17 by luisfern          #+#    #+#              #
-#    Updated: 2022/11/17 13:31:21 by luisfern         ###   ########.fr        #
+#    Updated: 2022/11/18 10:15:59 by luisfern         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ LIBFT_PATH = ../libft
 CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -I. -fsanitize=address
-LINKS = -L../minilibx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
+LINKS = -L../minilibx-linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
 
 
 all: $(NAME)

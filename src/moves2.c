@@ -6,7 +6,7 @@
 /*   By: luisfern <luisfern@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 10:47:48 by luisfern          #+#    #+#             */
-/*   Updated: 2022/11/17 12:26:18 by luisfern         ###   ########.fr       */
+/*   Updated: 2022/11/18 10:10:13 by luisfern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	move_up(t_program *game)
 	{
 		mlx_destroy_image(game->mlx, game->player);
 		game->player = mlx_xpm_file_to_image(game->mlx, "../sprites/charup.xpm",
-							&game->img_width, &game->img_height);
+				&game->img_width, &game->img_height);
 	}
 }
 
@@ -39,8 +39,8 @@ void	move_left(t_program *game)
 	if (game->game_over == 0)
 	{
 		mlx_destroy_image(game->mlx, game->player);
-		game->player = mlx_xpm_file_to_image(game->mlx, "../sprites/charleft.xpm",
-							&game->img_width, &game->img_height);
+		game->player = mlx_xpm_file_to_image(game->mlx,
+				"../sprites/charleft.xpm", &game->img_width, &game->img_height);
 	}
 }
 
@@ -55,8 +55,8 @@ void	move_down(t_program *game)
 	if (game->game_over == 0)
 	{
 		mlx_destroy_image(game->mlx, game->player);
-		game->player = mlx_xpm_file_to_image(game->mlx, "../sprites/charidle.xpm",
-							&game->img_width, &game->img_height);
+		game->player = mlx_xpm_file_to_image(game->mlx,
+				"../sprites/charidle.xpm", &game->img_width, &game->img_height);
 	}
 }
 
@@ -71,7 +71,8 @@ void	move_right(t_program *game)
 	if (game->game_over == 0)
 	{
 		mlx_destroy_image(game->mlx, game->player);
-		game->player = mlx_xpm_file_to_image(game->mlx, "../sprites/charright.xpm",
-							&game->img_width, &game->img_height);
+		game->player = mlx_xpm_file_to_image(game->mlx,
+				"../sprites/charright.xpm", &game->img_width,
+				&game->img_height);
 	}
 }
